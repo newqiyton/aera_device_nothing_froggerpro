@@ -24,7 +24,7 @@ Resolution              | 1260 x 2800
 Recovery        | Aera R1.0 beta
 :---------------|:---------------------------
 Variant         | 6.6
-Manifest        | https://github.com/nebrassy/platform_manifest_twrp_aosp.gi
+Manifest        | https://github.com/AERA-Recovery/android_manifest.git 
 
 
 
@@ -57,8 +57,8 @@ Manifest        | https://github.com/nebrassy/platform_manifest_twrp_aosp.gi
     - [x] With a password
 
 ## Aera-specific features
-    - [x] Graphics
-    - [ ] Network
-    - [ ] Audio
+- [x] Graphics
+- [ ] Network
+- [ ] Audio
 
 Thanks to dx4m for providing battery and otg support
