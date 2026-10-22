@@ -82,9 +82,15 @@ on property:twrp.modules.loaded=true
     start health-hal-2-1
     start vendor.qti.vibrator
 
+
     # Unmount /firmware
 
+# Run adb daemon (its not lauching for some reason)
+on boot
+    setprop sys.usb.config adb
 
+on property:sys.usb.config=adb
+    start adbd
 
 # AERA configurations
 
