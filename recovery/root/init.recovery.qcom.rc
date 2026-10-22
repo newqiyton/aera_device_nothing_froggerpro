@@ -1,5 +1,5 @@
 import /init.recovery.encryption.rc
-import /init.recovery.qcom_decrypt.fbe.rc
+import /init.recovery.wifi.rc
 
 # Set SELinux to Permissive
 on early-init
@@ -84,10 +84,6 @@ on property:twrp.modules.loaded=true
 
     # Unmount /firmware
 
-on boot
-    setprop sys.usb.config adb
-
-import /init.recovery.qcom_decrypt.rc
 
 
 # AERA configurations
