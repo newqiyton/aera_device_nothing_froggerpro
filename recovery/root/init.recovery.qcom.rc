@@ -85,12 +85,19 @@ on property:twrp.modules.loaded=true
 
     # Unmount /firmware
 
-# Run adb daemon (its not lauching for some reason)
+# Fix adbd not being launched
+service adbd /system/bin/adbd --root_seclabel=u:r:su:s0
+    class core
+    socket adbd stream 660 system system
+    disabled
+    seclabel u:r:adbd:s0
+
 on boot
     setprop sys.usb.config adb
 
 on property:sys.usb.config=adb
     start adbd
+
 
 # AERA configurations
 

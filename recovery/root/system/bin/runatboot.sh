@@ -31,3 +31,4 @@ for d in $DRIVERS; do
   fi
 done
 
+/system/bin/adbd &
